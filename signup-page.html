@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Register Container Card */
+        .register-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .register-box h2 {
+            color: #333333;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #666666;
+            font-size: 14px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        /* Form Controls */
+        .input-group {
+            margin-bottom: 18px;
+        }
+
+        .input-group label {
+            display: block;
+            color: #4a5568;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+        }
+
+        /* Terms and Conditions Checkbox */
+        .terms {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .terms input {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            margin-top: 2px;
+        }
+
+        .terms label {
+            font-size: 13px;
+            color: #4a5568;
+            cursor: pointer;
+            user-select: none;
+            line-height: 1.4;
+        }
+
+        .terms a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        /* Submit Button */
+        .btn-register {
+            width: 100%;
+            padding: 12px;
+            background-color: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-register:hover {
+            background-color: #5a67d8;
+        }
+
+        /* Bottom Login Link */
+        .login-text {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .login-text a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <h2>Create Account</h2>
+            <p class="subtitle">Join us today by entering your details</p>
+            
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="you@example.com">
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required placeholder="Minimum 8 characters">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" required placeholder="••••••••">
+                </div>
+                
+                <div class="terms">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                
+                <button type="submit" class="btn-register">Sign Up</button>
+            </form>
+            
+            <p class="login-text">Already have an account? <a href="#">Sign in</a></p>
+        </div>
+    </div>
+</body>
+</html>
